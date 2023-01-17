@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box{
+    width: 350px;
+    background-color: rgb(69, 72, 83);
+    padding: 25px;
+    text-align: center;
+    margin: 50px auto;
+    margin-top: 5%;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+
+.box img{
+    border-radius: 50%;
+    width: 200px; /*resmi küçülte işlemi width ve height ile yapıldı*/
+    height: 200px;
+    cursor: pointer;
+    transition: .5s; /*aşağıda vermiş olduğum resim küçültme işlemi yumuşak geçiş sağlıyor*/
+}
+
+.box img:hover{
+    transform: scale(0.9);/*profil resminin zamanla küçülmesini sağliyor*/
+}
+
+.box h1{
+    font-size: 35px;
+    font-weight: 150;
+    letter-spacing: 4px;
+    font-family:'Ubuntu', sans-serif ;
+}
+
+.box h5{
+    font-size: 15px;
+    font-family:'Ubuntu';
+    letter-spacing: 3px;
+}
+
+.box p{
+    text-align: justify; /*paragraf yazısını iki yana yasliyor*/
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.box li{
+    display: inline-block; /* iconlar alt alta idi yan yana hale getrdi*/
+    margin: 6px;
+    list-style: none;
+}
+
+.box li a{
+    color: white;
+    font-size: 40px;
+    transition: all ease-in-out 250ms;
+}
+
+.box li a:hover{
+    color: #b9b9b9;
+}
+
+.box li a i{
+    transition: .5s all;
+}
+
+.box li a:hover > i{
+    transform: scale(1.6) rotate(360deg);
+}
+
+
+
+
